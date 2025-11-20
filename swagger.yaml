@@ -57,9 +57,9 @@ info:
   contact:
     email: sviluppo@hive-service.com
 servers:
-  - url: https://api.hive-service.com
+  - url: https://api.eis.it
     description: Production server
-  - url: https://staging.api.hive-service.com
+  - url: https://staging.api.eis.it
     description: Staging server
 externalDocs:
   description: Find out more about our solutions
