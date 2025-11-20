@@ -10,6 +10,6 @@ properties:
   notes: { type: string }
   images: { type: string, nullable: true }
   category:
-    $ref: "#/components/schemas/Organization"
+    $ref: "./components/schemas/Organization"
   vendor:
-    $ref: "#/components/schemas/Organization"
+    $ref: "./components/schemas/Organization"

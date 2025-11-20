@@ -17,7 +17,7 @@ DeviceListByContractId:
             schema:
               type: array
               items:
-                $ref: "#/components/schemas/DaasDevice"
+                $ref: "./components/schemas/DaasDevice"
       "404":
         description: Contract not found
       "500":
@@ -39,7 +39,7 @@ DeviceAddToContract:
       content:
         application/json:
           schema:
-            $ref: "#/components/schemas/AddDevicesToContractRequest"
+            $ref: "./components/schemas/AddDevicesToContractRequest"
     responses:
       "200":
         description: Devices added to contract successfully.
@@ -48,7 +48,7 @@ DeviceAddToContract:
             schema:
               type: array
               items:
-                $ref: "#/components/schemas/DaasDevice"
+                $ref: "./components/schemas/DaasDevice"
       "400":
         description: Bad request - invalid input data
       "404":
@@ -73,7 +73,7 @@ DeviceById:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/DaasDevice"
+              $ref: "./components/schemas/DaasDevice"
       "404":
         description: Device not found
       "500":
@@ -123,14 +123,14 @@ DeviceElementUpdate:
       content:
         application/json:
           schema:
-            $ref: "#/components/schemas/DeviceElementRequest"
+            $ref: "./components/schemas/DeviceElementRequest"
     responses:
       "200":
         description: Device elements updated successfully.
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/DaasDevice"
+              $ref: "./components/schemas/DaasDevice"
       "400":
         description: Bad request - invalid input data
       "404":

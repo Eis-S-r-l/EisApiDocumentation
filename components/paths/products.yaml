@@ -11,7 +11,7 @@ ProductList:
             schema:
               type: array
               items:
-                $ref: "#/components/schemas/Product"
+                $ref: "./components/schemas/Product"
       "500":
         description: Internal server error
 
@@ -53,7 +53,7 @@ ProductFilter:
             schema:
               type: array
               items:
-                $ref: "#/components/schemas/Product"
+                $ref: "./components/schemas/Product"
       "400":
         description: Bad request - invalid filter parameters
       "500":
@@ -77,7 +77,7 @@ ProductById:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Product"
+              $ref: "./components/schemas/Product"
       "404":
         description: Product not found
       "500":
@@ -128,14 +128,14 @@ ProductAdd:
       content:
         application/json:
           schema:
-            $ref: "#/components/schemas/AddProductRequest"
+            $ref: "./components/schemas/AddProductRequest"
     responses:
       "201":
         description: Product created successfully.
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Product"
+              $ref: "./components/schemas/Product"
       "400":
         description: Bad request - invalid input data
       "500":
@@ -151,14 +151,14 @@ ProductEdit:
       content:
         application/json:
           schema:
-            $ref: "#/components/schemas/EditProductRequest"
+            $ref: "./components/schemas/EditProductRequest"
     responses:
       "200":
         description: Product updated successfully.
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Product"
+              $ref: "./components/schemas/Product"
       "400":
         description: Bad request - invalid input data
       "404":

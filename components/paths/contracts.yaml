@@ -11,7 +11,7 @@ ContractList:
             schema:
               type: array
               items:
-                $ref: "#/components/schemas/DaasContract"
+                $ref: "./components/schemas/DaasContract"
       "500":
         description: Internal server error
 
@@ -32,7 +32,7 @@ ContractById:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/DaasContract"
+              $ref: "./components/schemas/DaasContract"
       "404":
         description: Contract not found
       "500":
@@ -48,14 +48,14 @@ ContractAdd:
       content:
         application/json:
           schema:
-            $ref: "#/components/schemas/AddContractRequest"
+            $ref: "./components/schemas/AddContractRequest"
     responses:
       "201":
         description: Contract created successfully
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/DaasContract"
+              $ref: "./components/schemas/DaasContract"
       "400":
         description: Bad request - invalid input data
       "500":
