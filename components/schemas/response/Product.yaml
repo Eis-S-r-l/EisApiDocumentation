@@ -1,0 +1,15 @@
+# components/schemas/Response/Product.yaml
+type: object
+properties:
+  id: { type: integer }
+  name: { type: string }
+  description: { type: string }
+  productNumber: { type: string }
+  rma: { type: string, nullable: true }
+  available: { type: boolean }
+  notes: { type: string }
+  images: { type: string, nullable: true }
+  category:
+    $ref: "#/components/schemas/Organization"
+  vendor:
+    $ref: "#/components/schemas/Organization"

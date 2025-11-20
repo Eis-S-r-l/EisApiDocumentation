@@ -1,0 +1,8 @@
+# components/schemas/Response/DaasService.yaml
+type: object
+properties:
+  id: { type: integer }
+  name: { type: string }
+  description: { type: string }
+  externalId: { type: string }
+  productNumber: { type: string }
