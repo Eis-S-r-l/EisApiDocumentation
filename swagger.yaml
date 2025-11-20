@@ -66,57 +66,57 @@ tags:
 paths:
   # ACCESSORIES
   /v1/daas/accessory/list:
-    $ref: "./components/paths/accessories.yaml#/paths/v1/daas/accessory/list"
+    $ref: "./components/paths/accessories.yaml#/paths/~1v1~1daas~1accessory~1list"
   /v1/daas/accessory/{id}:
-    $ref: "./components/paths/accessories.yaml#/paths/v1/daas/accessory/{id}"
+    $ref: "./components/paths/accessories.yaml#/paths/~1v1~1daas~1accessory~1{id}"
   /v1/daas/device/{id}/accessory/list:
-    $ref: "./components/paths/accessories.yaml#/paths/v1/daas/device/{id}/accessory/list"
+    $ref: "./components/paths/accessories.yaml#/paths/~1v1~1daas~1device~1{id}~1accessory~1list"
   /v1/daas/accessory/add:
-    $ref: "./components/paths/accessories.yaml#/paths/v1/daas/accessory/add"
+    $ref: "./components/paths/accessories.yaml#/paths/~1v1~1daas~1accessory~1add"
   /v1/daas/accessory/edit:
-    $ref: "./components/paths/accessories.yaml#/paths/v1/daas/accessory/edit"
+    $ref: "./components/paths/accessories.yaml#/paths/~1v1~1daas~1accessory~1edit"
 
   # SERVICES
   /v1/daas/service/list:
-    $ref: "./components/paths/services.yaml#/paths/v1/daas/service/list"
+    $ref: "./components/paths/services.yaml#/paths/~1v1~1daas~1service~1list"
   /v1/daas/service/{id}:
-    $ref: "./components/paths/services.yaml#/paths/v1/daas/service/{id}"
+    $ref: "./components/paths/services.yaml#/paths/~1v1~1daas~1service~1{id}"
   /v1/daas/device/{id}/service/list:
-    $ref: "./components/paths/services.yaml#/paths/v1/daas/device/{id}/service/list"
+    $ref: "./components/paths/services.yaml#/paths/~1v1~1daas~1device~1{id}~1service~1list"
   /v1/daas/service/add:
-    $ref: "./components/paths/services.yaml#/paths/v1/daas/service/add"
+    $ref: "./components/paths/services.yaml#/paths/~1v1~1daas~1service~1add"
   /v1/daas/service/edit:
-    $ref: "./components/paths/services.yaml#/paths/v1/daas/service/edit"
+    $ref: "./components/paths/services.yaml#/paths/~1v1~1daas~1service~1edit"
 
   # CONTRACTS
   /v1/daas/contract/list:
-    $ref: "./components/paths/contracts.yaml#/paths/v1/daas/contract/list"
+    $ref: "./components/paths/contracts.yaml#/paths/~1v1~1daas~1contract~1list"
   /v1/daas/contract/{id}:
-    $ref: "./components/paths/contracts.yaml#/paths/v1/daas/contract/{id}"
+    $ref: "./components/paths/contracts.yaml#/paths/~1v1~1daas~1contract~1{id}"
   /v1/daas/contract/add:
-    $ref: "./components/paths/contracts.yaml#/paths/v1/daas/contract/add"
+    $ref: "./components/paths/contracts.yaml#/paths/~1v1~1daas~1contract~1add"
 
   # DEVICES
   /v1/daas/contract/{id}/devices:
-    $ref: "./components/paths/devices.yaml#/paths/v1/daas/contract/{id}/devices"
+    $ref: "./components/paths/devices.yaml#/paths/~1v1~1daas~1contract~1{id}~1devices"
   /v1/daas/device/{id}:
-    $ref: "./components/paths/devices.yaml#/paths/v1/daas/device/{id}"
+    $ref: "./components/paths/devices.yaml#/paths/~1v1~1daas~1device~1{id}"
   /v1/daas/device/{id}/element:
-    $ref: "./components/paths/devices.yaml#/paths/v1/daas/device/{id}/element"
+    $ref: "./components/paths/devices.yaml#/paths/~1v1~1daas~1device~1{id}~1element"
 
   # PRODUCTS
   /v1/product/:
-    $ref: "./components/paths/products.yaml#/paths/v1/product/"
+    $ref: "./components/paths/products.yaml#/paths/~1v1~1product~1"
   /v1/product/filter:
-    $ref: "./components/paths/products.yaml#/paths/v1/product/filter"
+    $ref: "./components/paths/products.yaml#/paths/~1v1~1product~1filter"
   /v1/product/details/{id}:
-    $ref: "./components/paths/products.yaml#/paths/v1/product/details/{id}"
+    $ref: "./components/paths/products.yaml#/paths/~1v1~1product~1details~1{id}"
   /v1/product/delete/{id}/{organizationId}:
-    $ref: "./components/paths/products.yaml#/paths/v1/product/delete/{id}/{organizationId}"
+    $ref: "./components/paths/products.yaml#/paths/~1v1~1product~1delete~1{id}~1{organizationId}"
   /v1/product/add:
-    $ref: "./components/paths/products.yaml#/paths/v1/product/add"
+    $ref: "./components/paths/products.yaml#/paths/~1v1~1product~1add"
   /v1/product/edit:
-    $ref: "./components/paths/products.yaml#/paths/v1/product/edit"
+    $ref: "./components/paths/products.yaml#/paths/~1v1~1product~1edit"
 
 components:
   securitySchemes:
