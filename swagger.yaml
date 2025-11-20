@@ -1,16 +1,57 @@
 openapi: 3.0.3
 info:
-  title: Eis API
-  description: These are the APIs to provision and configure services from Eis Service Provider.
+  title: EIS DaaS Portal API
+  description: |
+    # Interfacciamento al Modulo DaaS (Device as a Service) del Portale EIS
+
+    Questa suite di API è fondamentale per provisionare e configurare i servizi necessari alla gestione completa del ciclo di vita dei dispositivi (DaaS). Fornisce gli strumenti per gestire l'anagrafica, i cataloghi prodotti, le offerte commerciali e gli ordini di assistenza.
+
+    ## Flusso Operativo Obbligatorio
+    Le chiamate devono seguire la seguente sequenza logica:
+
+    ### 1. Preparazione Iniziale (Dati Base)
+    - Creare Anagrafica
+    - Creare Categoria / Fornitore  
+    - Aggiungere Prodotto
+
+    ### 2. Creazione Offerta
+    - Creare Offerta
+    - Associare Devices
+    - Aggiungere Accessori / Servizi
+
+    ### 3. Creazione Ordine di Assistenza
+    - Generare un ordine per device
+
+    ## Istruzioni POST e Caricamento File
+    Per associare file multipli agli elementi, usare: `files.{idElement}`
+
+    **Esempio:**
+    ```
+    files.24 => [ image1.jpg, img2.png ]
+    ```
+
+    **Requisiti file:**
+    I caratteri consentiti per i nomi dei file sono i seguenti:
+    - Lettere maiuscole: dalla A alla Z
+    - Lettere minuscole: dalla a alla z
+    - Numeri: dallo 0 al 9
+    - Spazio
+    - Trattino basso (underscore): _
+    - Punto: .
+    - Trattino: -
+
+    **Dimensione massima per file:** 5MB
+
+    #### These are the APIs to provision and configure services from Eis Service Provider.
   version: 1.0.11
   contact:
-    email: sviluppo@teameis.it
+    email: sviluppo@eis.it
 servers:
   - url: https://api.eis.it
     description: Production server
 externalDocs:
   description: Find out more about our solutions
-  url: https://wiki.teameis.it
+  url: https://wiki.eis.it
 
 tags:
   - name: 📋DaaS
@@ -985,12 +1026,11 @@ components:
       type: object
       properties:
         id: { type: integer }
+        organization: { $ref: "#/components/schemas/Organization" }
         name: { type: string }
         description: { type: string }
-        status:
-          type: string
-          enum: [active, inactive, pending]
-        linkedAccessory: { $ref: "#/components/schemas/DaasAccessory" }
+        externalId: { type: string }
+        productNumber: { type: string }
 
     DaasContract:
       type: object
