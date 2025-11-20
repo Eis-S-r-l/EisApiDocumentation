@@ -127,37 +127,37 @@ components:
       scheme: basic
 
   schemas:
-    # REQUEST SCHEMAS (Riferimenti a ./components/schemas/Request/)
+    # rEQUEST SCHEMAS (Riferimenti a ./components/schemas/request/)
     AddAccessoryRequest:
-      $ref: "./components/schemas/Request/AddAccessoryRequest.yaml"
+      $ref: "./components/schemas/request/AddAccessoryRequest.yaml"
     EditAccessoryRequest:
-      $ref: "./components/schemas/Request/EditAccessoryRequest.yaml"
+      $ref: "./components/schemas/request/EditAccessoryRequest.yaml"
     AddServiceRequest:
-      $ref: "./components/schemas/Request/AddServiceRequest.yaml"
+      $ref: "./components/schemas/request/AddServiceRequest.yaml"
     EditServiceRequest:
-      $ref: "./components/schemas/Request/EditServiceRequest.yaml"
+      $ref: "./components/schemas/request/EditServiceRequest.yaml"
     AddContractRequest:
-      $ref: "./components/schemas/Request/AddContractRequest.yaml"
+      $ref: "./components/schemas/request/AddContractRequest.yaml"
     DeviceElementRequest:
-      $ref: "./components/schemas/Request/DeviceElementRequest.yaml"
+      $ref: "./components/schemas/request/DeviceElementRequest.yaml"
     AddDevicesToContractRequest:
-      $ref: "./components/schemas/Request/AddDevicesToContractRequest.yaml"
+      $ref: "./components/schemas/request/AddDevicesToContractRequest.yaml"
     AddProductRequest:
-      $ref: "./components/schemas/Request/AddProductRequest.yaml"
+      $ref: "./components/schemas/request/AddProductRequest.yaml"
     EditProductRequest:
-      $ref: "./components/schemas/Request/EditProductRequest.yaml"
+      $ref: "./components/schemas/request/EditProductRequest.yaml"
 
-    # RESPONSE SCHEMAS (Riferimenti a ./components/schemas/Response/)
+    # rESPONSE SCHEMAS (Riferimenti a ./components/schemas/response/)
     DaasDevice:
-      $ref: "./components/schemas/Response/DaasDevice.yaml"
+      $ref: "./components/schemas/response/DaasDevice.yaml"
     DaasAccessory:
-      $ref: "./components/schemas/Response/DaasAccessory.yaml"
+      $ref: "./components/schemas/response/DaasAccessory.yaml"
     DaasService:
-      $ref: "./components/schemas/Response/DaasService.yaml"
+      $ref: "./components/schemas/response/DaasService.yaml"
     DaasContract:
-      $ref: "./components/schemas/Response/DaasContract.yaml"
+      $ref: "./components/schemas/response/DaasContract.yaml"
     Product:
-      $ref: "./components/schemas/Response/Product.yaml"
+      $ref: "./components/schemas/response/Product.yaml"
     # Schema comune (necessario per DaasAccessory, DaasService, Product)
     Organization:
-      $ref: "./components/schemas/Response/Organization.yaml"
+      $ref: "./components/schemas/response/Organization.yaml"
